@@ -12,15 +12,15 @@
     }
 
     // Get data to display on index page
-    $sql = "SELECT * FROM posts";
+    $sql = "SELECT * FROM post";
     $query = mysqli_query($conn, $sql);
 
     // Create a new post
-    if(isset($_REQUEST['posts'])){
+    if(isset($_REQUEST['post'])){
         $title = $_REQUEST['title'];
         $content = $_REQUEST['body'];
 
-        $sql = "INSERT INTO posts(title, body) VALUES('$title', '$content')";
+        $sql = "INSERT INTO post(title, body) VALUES('$title', '$content')";
         mysqli_query($conn, $sql);
 
         echo $sql;
@@ -32,7 +32,7 @@
     // Get post data based on id
     if(isset($_REQUEST['P_ID'])){
         $id = $_REQUEST['P_ID'];
-        $sql = "SELECT * FROM posts WHERE P_ID = $id";
+        $sql = "SELECT * FROM post WHERE P_ID = $id";
         $query = mysqli_query($conn, $sql);
     }
 
@@ -40,7 +40,7 @@
     if(isset($_REQUEST['delete'])){
         $id = $_REQUEST['P_ID'];
 
-        $sql = "DELETE FROM posts WHERE P_ID = $id";
+        $sql = "DELETE FROM post WHERE P_ID = $id";
         mysqli_query($conn, $sql);
 
         header("Location: postindex.php");
@@ -53,7 +53,7 @@
         $title = $_REQUEST['title'];
         $content = $_REQUEST['body'];
 
-        $sql = "UPDATE posts SET title = '$title', body = '$content' WHERE P_ID = $id";
+        $sql = "UPDATE post SET title = '$title', body = '$content' WHERE P_ID = $id";
         mysqli_query($conn, $sql);
 
         header("Location: postindex.php");

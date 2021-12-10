@@ -49,7 +49,7 @@
   	<button type="submit" class="logbtn" name="reg_user">Register</button>
 
     <p>
-  		Already a member? <a href="index.php">Sign in</a>
+  		Already a member? <a href="login.php">Sign in</a>
   	</p>
   </form>
 </body>
