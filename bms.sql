@@ -16,8 +16,8 @@ CREATE TABLE posts (
   title VARCHAR(50) NOT NULL UNIQUE,
   body varchar(255),
   post_time datetime,
-  lecturer varchar(255),
-  category varchar(255),
   likes varchar(255),
   FOREIGN KEY (ID) REFERENCES users(ID)
 );
+
+INSERT INTO `posts` (`itile`,`body`) values ([value-1],[value-2]);

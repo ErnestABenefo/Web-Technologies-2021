@@ -1,0 +1,137 @@
+/*.container{
+    background-color: #3498db;
+}*/
+
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap");
+/*Body*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+       
+}
+
+
+li, a, button{
+    font-family: 'Baloo Bhaijaan 2';
+    font-weight: 500;
+    font-size: 16px;
+    color:aliceblue;
+    text-decoration: none;
+
+}
+
+/*.BMSTest{
+    padding-right: 100px;
+}*/
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background-color: rgb(2, 28, 77);
+    
+}
+
+/*body{
+    background-image: url('background.png')
+}*/
+
+
+
+.logo {
+    cursor: pointer;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a:hover {
+    color: rgba(70, 161, 214, 0.788);
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgb(26, 41, 107);
+    border: none;
+    border-radius: 50px;
+
+
+}
+
+
+
+button .button2{
+    padding: 9px 25px;
+    background-color: rgb(70, 161, 214, 0.788);
+    border: none;
+    border-radius: 50px;
+}
+
+.area{
+    margin: 50%;
+
+    padding-left: 50%;
+}
+
+
+
+
+
+
+/*Footer*/
+footer{
+    color: white;
+    background-color: rgba(11, 50, 95, 0.911);
+    padding: 50px 20px;
+    
+  
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      
+}
+
+.flex-row{
+    margin-bottom:32px;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+    
+}
+
+li{
+    padding: 0 15px;
+    margin-bottom: 16px;
+    display:inline-block
+}
+
+a{
+    font-size:14px;
+    font-weight: 500;
+    color: white
+}
+
+i {
+    cursor: pointer;
+    font-size: 30px;
+}
+
+p{
+    text-align: center;
+}
+
+.fa{
+    color: white;
+}

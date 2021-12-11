@@ -29,13 +29,13 @@
       <!--The Header containing the Navigation Bar-->
         <header>
                         
-            <img class="logo" src="#" alt="logo">
+            <img class="logo" src="bmslogo.png" alt="logo">
             <nav>
                 <ul class="nav_links">
                     <li><a href="home.php">Home</a></li>
-                    <li><a href="postindex.php">Create Posts</a></li>
-                    <li><a href="#">Read Other Posts</a></li>
-                    <li><a href="editpost.php">Edit Post</a></li>
+                    <li><a href="BlogSample/blog_index.php">Create Posts</a></li>
+                    <!--<li><a href="#">Read Other Posts</a></li>-->
+                    <!--<li><a href="editpost.php">Edit Post</a></li>-->
                 </ul>
             </nav>
             <a class="cta" href="#"><button>Log Out</button></a> 
@@ -97,7 +97,7 @@
                         
             </div>
 
-        <div class= "button finish" >What am I?</div>
+        <div class= "button finish" >What's your business?</div>
    
 <!--Javascript functionality of the questionnaire form-->
 
@@ -117,7 +117,7 @@
                 $(this).addClass('selected');
                 total += $(this).data('value');
 
-              //console.log(total)   
+                 
                 
             })
             $('.finish').on('click', function(){
@@ -146,6 +146,7 @@
 
                
                  alert(message)
+                 //console.log(message)
                 
              }
 
@@ -156,14 +157,7 @@
 
 
         </script>
-        <!--
-        *    Title: <title of program/source code>
-        *    Author: <author(s) names>
-        *    Date: <date>
-        *    Code version: <code version>
-        *    Availability: <where it's located>
-        *
-        *-->
+    <!--Footer Elements-->  
 
      <footer>
          <div class="container">
